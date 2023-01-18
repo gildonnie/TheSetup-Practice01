@@ -1,12 +1,25 @@
+.site-header {
+	background-color: #153d2e;
+	
+.site-branding {
+	img {
+		margin-left: 20px;
+		margin-top: 10px;
+		height: 100px;
+		width: 100px;
+	}
+}
 .main-navigation {
 	display: block;
 	width: 100%;
+	
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		float: right;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -60,6 +73,14 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: black;
+		margin-right: 20px;
+		&:hover {
+			color: gray;
+		}
+		&:active {
+			color: red;
+		}
 	}
 
 	.current_page_item > a,
@@ -106,4 +127,5 @@
 		text-align: end;
 		flex: 1 0 50%;
 	}
+}
 }

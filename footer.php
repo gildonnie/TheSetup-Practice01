@@ -24,7 +24,17 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'thesetup-practice01' ), 'thesetup-practice01', '<a href="http://gildonnie">Donnie</a>' );
 				?>
+				<?php
+					wp_nav_menu(array(
+						'menu' => 'Nav Menu',
+						'theme_location' => 'footer-menu',
+						'menu_class' => 'footer-menu',
+						'menu_id' => 'footer-id'
+					))
+        ?>
+
 		</div><!-- .site-info -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
